@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landore Social Club Pool</title>
+    <title>Landore Pool and Snooker</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,8 +11,13 @@
             text-align: center;
             margin: 20px;
         }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
         table {
-            margin: 20px auto;
             border-collapse: collapse;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -24,7 +29,7 @@
             padding: 10px 15px;
             border: 1px solid #ddd;
             text-align: center;
-            white-space: nowrap; /* Prevents text from wrapping */
+            white-space: nowrap;
         }
         th {
             background-color: #4CAF50;
@@ -40,84 +45,49 @@
     </style>
 </head>
 <body>
-
-    <table>
-        <tr>
-            <th>Team</th>
-            <th>Played</th>
-            <th>Points</th>
-        </tr>
-        <tr>
-            <td>Rileys</td>
-            <td>20</td>
-            <td>135</td>
-        </tr>
-        <tr>
-            <td>Full Moon</td>
-            <td>20</td>
-            <td>116</td>
-        </tr>
-        <tr>
-            <td>Malsters</td>
-            <td>20</td>
-            <td>115</td>
-        </tr>
-        <tr>
-            <td>Ivorites B</td>
-            <td>20</td>
-            <td>114</td>
-        </tr>
-        <tr>
-            <td>Landore</td>
-            <td>20</td>
-            <td>110</td>
-        </tr>
-        <tr>
-            <td>Ynystawe B</td>
-            <td>20</td>
-            <td>108</td>
-        </tr>
-        <tr>
-            <td>Workies</td>
-            <td>20</td>
-            <td>107</td>
-        </tr>
-        <tr>
-            <td>Midland</td>
-            <td>20</td>
-            <td>106</td>
-        </tr>
-        <tr>
-            <td>Commercial</td>
-            <td>19</td>
-            <td>89</td>
-        </tr>
-        <tr>
-            <td>Sherwoods B</td>
-            <td>20</td>
-            <td>85</td>
-        </tr>
-        <tr>
-            <td>Alma</td>
-            <td>20</td>
-            <td>80</td>
-        </tr>
-        <tr>
-            <td>Sherwoods A</td>
-            <td>19</td>
-            <td>80</td>
-        </tr>
-        <tr>
-            <td>Penlan Social B</td>
-            <td>20</td>
-            <td>77</td>
-        </tr>
-        <tr>
-            <td>Fountain</td>
-            <td>20</td>
-            <td>58</td>
-        </tr>
-    </table>
-
+    <div class="container">
+        <div>
+            <h2>Remaining Fixtures</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Home</th>
+                    <th>Away</th>
+                </tr>
+                <tr><td>27th March</td><td>Landore</td><td>Sherwoods B</td></tr>
+                <tr><td>3rd April</td><td>Away</td><td>Rileys</td></tr>
+                <tr><td>10th April</td><td colspan="2">No match (cup ties)</td></tr>
+                <tr><td>17th April</td><td>Landore</td><td>Workies</td></tr>
+                <tr><td>24th April</td><td>Commercial</td><td>Landore</td></tr>
+                <tr><td>1st May</td><td>Landore</td><td>Fountain</td></tr>
+                <tr><td>8th May</td><td colspan="2">No match (cup ties)</td></tr>
+                <tr><td>15th May</td><td>Ynystawe</td><td>Landore</td></tr>
+            </table>
+        </div>
+        <div>
+            <h2>League Table</h2>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Points</th>
+                </tr>
+                <tr><td>Riley’s</td><td>20</td><td>135</td></tr>
+                <tr><td>Full Moon</td><td>20</td><td>116</td></tr>
+                <tr><td>Malsters</td><td>20</td><td>115</td></tr>
+                <tr><td>Ivorites B</td><td>20</td><td>114</td></tr>
+                <tr><td>Landore</td><td>20</td><td>110</td></tr>
+                <tr><td>Ynystawe B</td><td>20</td><td>108</td></tr>
+                <tr><td>Workies</td><td>20</td><td>107</td></tr>
+                <tr><td>Midland</td><td>20</td><td>106</td></tr>
+                <tr><td>Commercial</td><td>19</td><td>89</td></tr>
+                <tr><td>Sherwoods B</td><td>20</td><td>85</td></tr>
+                <tr><td>Alma</td><td>20</td><td>80</td></tr>
+                <tr><td>Sherwoods A</td><td>19</td><td>80</td></tr>
+                <tr><td>Penlan Social B</td><td>20</td><td>77</td></tr>
+                <tr><td>Fountain</td><td>20</td><td>58</td></tr>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
